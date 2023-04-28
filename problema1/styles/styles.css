@@ -1,0 +1,70 @@
+body {
+    background: #FEFEFD;
+    padding: 2%;
+}
+
+th,
+td {
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+
+tr:hover {
+    background-color: #258EAD;
+}
+
+.titulodecampo {
+    background: #9999FF;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#principal {
+    font-size: medium;
+    color: rgb(228, 255, 255);
+    background-color: rgb(0, 51, 40);
+    display: inline;
+    padding: 2%;
+    border-radius: 50%;
+}
+
+#principal:hover {
+    cursor: pointer;
+    background-color: #258EAD;
+}
+
+.texto {
+    display: flex;
+    border-radius: 20%;
+    background-color: #9999FF;
+    font-size: large;
+    padding: 10%;
+}
+
+.uno {
+    border: 2px solid rgb(0, 0, 0);
+    height: 100px;
+    background-color: rgb(101, 75, 116);
+}
+
+.mensaje {
+    border: 2px solid rgb(218, 242, 0);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #dfdfdf;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.dos {
+    color: white;
+    background-color: rgb(196, 165, 40);
+}
+
+.comentario {
+    border-bottom: #2e7d16 solid;
+    font-size: small;
+}
