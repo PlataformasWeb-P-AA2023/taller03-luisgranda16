@@ -1,0 +1,30 @@
+body {
+    background: #FEFEFD;
+    padding: 2%;
+}
+
+th,
+td {
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+
+tr:hover {
+    background-color: #258EAD;
+}
+
+.obtener {
+    cursor: pointer;
+    height: 25px;
+    background-color: #4be882;
+    border: none;
+    border-radius: 12px;
+}
+
+.limpiar {
+    cursor: pointer;
+    height: 25px;
+    background-color: #e8874b;
+    border: none;
+    border-radius: 12px;
+}

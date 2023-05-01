@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <title>Demo Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+
+<body>
+    <h1>Busqueda</h1>
+    <button class="limpiar" type="submit" id="limpiar">Limpiar Datos</button>
+    <p id="mensaje" style="  background-color: rgb(204, 246, 186); ">
+    </p>
+    <button type="submit " class="obtener" id="obtener">Obtener Datos</button>
+
+</body>
+<script>
+    $(document).ready(function() {
+        var datos = "https://pkgstore.datahub.io/core/country-codes/country-codes_json/data/616b1fb83cbfd4eb6d9e7d52924bb00a/country-codes_json.json ";
+        $("#obtener").click(function() {
+            $.ajax({
+                dataType: 'json',
+                url: datos
+            }).then(function(data) {
+                for (var i = 0; i < data.length; i++) {
+                    console.log(data[i]);
+                    console.log(data[i]["CLDR display name "]);
+                    console.log(data[i].Capital);
+                    console.log(data[i].FIPS);
+                    console.log(data[i].DS);
+                    console.log(data[i].FIFA);
+                    console.log(data[i].Continent);
+                    console.log(data[i].Languages);
+                    console.log(data[i]["Geoname ID "]);
+
+                    $('#mensaje').append("<table> <b>CLDR display name:</b> " + data[i]["CLDR display name"] + " <b>Capital:</b> " + data[i].Capital + " <b>FIPS:</b> " + data[i].FIPS + " <b>Continent:</b> " + data[i].Continent + " <b>FIFA:</b> " +
+                        data[i].FIFA + " <b>Languages:</b> " + data[i].Languages + " <b>Geoname:</b> " + data[i]["Geoname ID"] + " <b>DS:</b> " + data[i].DS + "</table>");
+                }
+            });
+        });
+        $("#limpiar").click(function() {
+            $('#mensaje').empty();
+        });
+    });
+</script>
+
+</html>

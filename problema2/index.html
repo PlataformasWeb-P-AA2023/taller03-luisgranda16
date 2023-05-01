@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <title>Ejemplo HTML5 y CSS3</title>
+</head>
+
+<body>
+
+    <h4>Nombre:</h4>
+    <p><input name="nombre" id="nombre" type="text"> <br></p>
+    <h4>Apellido:</h4>
+    <p><input name="apellido" id="apellido" type="text"> <br></p>
+    <h4>Fecha de nacimiento:</h4>
+    <p><input name="fecha" type="text" id="datepicker"></p>
+    <button type="submit"> Generar Mensaje</button>
+    <p class="mensaje" id="mensaje"></p>
+    <script>
+        $(function() {
+            $("#datepicker").datepicker();
+        });
+
+        $("button").click(function() {
+            var n = $('#nombre').val();
+            var a = $('#apellido').val();
+            var f = $('#datepicker').val();
+            $('#mensaje').text("Datos ingresados:\n"+" "+ n + "\n" + a + "\n" + f)
+            console.log(n)
+            console.log(a)
+            console.log(f)
+        })
+    </script>
+
+</body>
+
+</html>

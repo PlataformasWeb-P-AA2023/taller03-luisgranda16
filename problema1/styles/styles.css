@@ -14,10 +14,10 @@ tr:hover {
 }
 
 .titulodecampo {
-    background: #9999FF;
+    background: #bbbbff;
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 7px;
     font-weight: bold;
 }
 
@@ -37,20 +37,20 @@ tr:hover {
 
 .texto {
     display: flex;
-    border-radius: 20%;
-    background-color: #9999FF;
+    border-radius: 10%;
+    background-color: #ababff;
     font-size: large;
     padding: 10%;
 }
 
 .uno {
-    border: 2px solid rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
     height: 100px;
-    background-color: rgb(101, 75, 116);
+    background-color: #bbbbff;
 }
 
 .mensaje {
-    border: 2px solid rgb(218, 242, 0);
+    border: 3px solid rgb(218, 242, 0);
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px;
@@ -61,7 +61,7 @@ tr:hover {
 
 .dos {
     color: white;
-    background-color: rgb(196, 165, 40);
+    background-color: rgb(228, 155, 47);
 }
 
 .comentario {

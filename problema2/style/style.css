@@ -1,0 +1,23 @@
+body {
+    background: #FEFEFD;
+    padding: 15px;
+}
+
+th,
+td {
+    padding: 15px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+tr:hover {
+    background-color: #6cddff;
+
+}
+
+.mensaje {
+    
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
